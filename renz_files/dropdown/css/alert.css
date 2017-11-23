@@ -1,0 +1,39 @@
+.alert, .alt-info, .alt-lemon, .alt-warning {
+  border: 1px solid #999; }
+  .alert i, .alt-info i, .alt-lemon i, .alt-warning i {
+    padding: 10px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: #fff; }
+  .alert .message, .alt-info .message, .alt-lemon .message, .alt-warning .message {
+    padding-left: 15px; }
+
+.alt-info {
+  background: #bdedc3; }
+  .alt-info i {
+    background: #a1c6a5;
+    color: #444; }
+
+.alt-lemon {
+  background: #e5d227; }
+  .alt-lemon i {
+    background: #cebd23;
+    color: #444; }
+
+.alt-warning {
+  color: #000;
+  background: #fc4444; }
+  .alt-warning i {
+    background: #d81515;
+    color: #444; }
+
+.tries {
+  position: relative; }
+  .tries .alt-info {
+    display: none; }
+  .tries button {
+    margin-bottom: 20px; }
+  .tries button:focus + .alt-info {
+    display: inherit; }
+
+/*# sourceMappingURL=alert.css.map */

@@ -1,0 +1,49 @@
+.back {
+  background: linear-gradient( #fff, #f7f7f7);
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 70px;
+  padding: 10px;
+  position: relative;
+  height:72px;
+}
+
+.switch {
+  transition: all 0.3s;
+  position: relative;
+  background: #999ba3;
+  height:50px;
+  width: 30px;
+  border-bottom: 10px solid #b4b6ba;
+  border-radius: 3px;
+  border: 1px solid gray;
+  margin-left: 9px;
+  input {
+    display: none;
+  }
+
+  .slider {
+    transition: all 0.3s;
+    position: absolute;
+    //background: linear-gradient(#dbdde0, #b6b7ba);
+    background: #ccc;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 28px;
+    height: 40px;
+    border-bottom: 1px solid #7b7d82;
+    border-radius: 3px;
+  }
+
+  input:checked + .slider {
+
+    top: 10px;
+    border-top: 1px solid #87898e;
+    //background: linear-gradient(#b6b7ba, #dbdde0);
+  }
+
+}
+
+

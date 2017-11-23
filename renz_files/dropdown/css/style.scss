@@ -1,3 +1,6 @@
+@import 'switch';
+@import 'alert';
+
 $darkgray: #444;
 $navBorder: 1px solid #d1d1d1;
 $navBack: #eff0f2;
@@ -27,6 +30,7 @@ $navBack: #eff0f2;
 		border: $navBorder;
 		border-radius: 3px;
 		padding: 10px;
+		z-index: 99;
 		li {
 			padding: 12px 18px;
 		}

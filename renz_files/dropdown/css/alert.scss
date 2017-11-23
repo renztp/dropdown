@@ -1,0 +1,66 @@
+.alert {
+	border: 1px solid #999;
+
+	i {
+		padding: 10px;
+			
+		border-top-left-radius: 3px;
+		border-bottom-left-radius: 3px;
+		color: #fff;
+	}
+
+	.message {
+		padding-left: 15px;
+	}
+}
+
+.alt-info {
+	@extend .alert;
+	background:#bdedc3;
+
+	i {
+		background:#a1c6a5;
+		color: #444;
+	}
+}
+
+.alt-lemon {
+	@extend .alert;
+	background:#e5d227;
+		
+	i {
+		background: #cebd23;
+		color: #444;
+	}
+}
+
+.alt-warning {
+	color: #000;
+	@extend .alert;
+	background:#fc4444;
+
+	i {
+		background:#d81515;
+		color: #444;
+	}
+}
+
+
+.tries {
+	position: relative;
+	.alt-info {
+		display: none;
+	}
+
+	button {
+		margin-bottom: 20px;
+	}
+
+	button:focus + .alt-info {
+		display: inherit;
+	}
+}
+
+
+
+
