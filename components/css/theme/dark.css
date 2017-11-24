@@ -188,7 +188,7 @@ button {
   background: #302c2e; }
 .dark-bread a {
   color: #666364; }
-.dark-bread .active {
+.dark-bread .active, .dark-bread .tab-dark .nav-item .active:hover, .tab-dark .nav-item .dark-bread .active:hover, .dark-bread .tab-dark .nav-item .active:focus, .tab-dark .nav-item .dark-bread .active:focus {
   color: #918e8e; }
 
 .modal-dark {
@@ -208,5 +208,19 @@ button {
     border-bottom: 1px solid #222; }
   .modal-dark .modal-footer {
     border-top: #222; }
+
+.tab-dark {
+  border-bottom: 1px solid #555; }
+  .tab-dark .nav-item a {
+    color: gray; }
+  .tab-dark .nav-item .nav-link:hover {
+    border: 1px solid transparent; }
+  .tab-dark .nav-item .nav-link:focus {
+    border: 1px solid transparent; }
+  .tab-dark .nav-item .active, .tab-dark .nav-item .active:hover, .tab-dark .nav-item .active:focus {
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 4px solid #565151;
+    color: #ccc; }
 
 /*# sourceMappingURL=dark.css.map */

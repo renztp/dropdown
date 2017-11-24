@@ -1,5 +1,5 @@
-@import 'theme/dark';
-// @import 'theme/light';
+// @import 'theme/dark';
+@import 'theme/light';
 
 
 
@@ -36,4 +36,36 @@ $font-stack:Rajdhani,  Questrial;
 	.arrow {
 		float: right;
 	}
+}
+
+// Tabs
+
+.tab-dark {
+  border-bottom: 1px solid #888;
+  .nav-item {
+    a {
+      color: gray;
+    }
+    .nav-link:hover {
+      border: 1px solid transparent;
+    }
+    .nav-link:focus {
+     border: 1px solid transparent;     
+   }
+    .active {
+      background-color: transparent;
+      border: 0px;
+      border-bottom: 4px solid #706969;
+      color: #333;
+    }
+
+    .active:hover {
+      @extend .active;
+    }
+
+    .active:focus {
+      @extend .active;
+    }
+  }
+
 }
