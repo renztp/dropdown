@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Page</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Questrial|Rajdhani" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="spaces" style="height: 10em;"></div>
+	<!-- NAVIGATION MENU -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12" style="padding: 0px;">
+				<div class="navbar navbar-expand-lg navbar-lg">
+					<a href="#" class="navbar-brand"><i class="fa fa-gg"></i> Components</a>
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a href="#" class="nav-link active">Home</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link opens">Features <i class="fa fa-angle-down"></i>
+									<ul>
+										<li>Split editing</li>
+										<li>Find anywhere</li>
+										<li class="opens">Themes <i class="fa fa-angle-right"></i>
+											<ul class="deep">
+												<li>Darcula</li>
+												<li>Crimson</li>
+												<li class="opens">Solarized <i class="fa fa-angle-right"></i>
+													<ul class="deep">
+														<li>Dark</li>
+														<li>Light</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Platform <i class="fa fa-angle-down"></i></a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link">Donate</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<!-- SIDEBAR -->
+			<div class="col-2" style="padding: 5px;">
+				<h3>Sidebar</h3>
+				<div class="card sidebar">
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item"><i class="fa fa-envelope"></i> Mailbox <i class="fa fa-angle-right arrow"></i></li>
+						<li class="list-group-item"><i class="fa fa-exchange"></i> Conversations <i class="fa fa-angle-right arrow"></i></li>
+						<li class="list-group-item"><i class="fa fa-user"></i> Friends <i class="fa fa-angle-right arrow"></i></li>
+						<li class="list-group-item"><i class="fa fa-users"></i> Work Group <i class="fa fa-angle-right arrow"></i></li>
+						<li class="list-group-item"><i class="fa fa-cogs"></i> Settings <i class="fa fa-angle-right arrow"></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-3 buttons" style="padding: 5px;">
+				<h3>Buttons</h3>
+				<div class="col-12" style="padding: 0px;">
+					<button class="btn butt-default">Default</button>
+					<button class="btn butt-primary">Primary</button>
+					<button class="btn butt-info">info</button>
+				</div>
+				<div class="col-12" style="padding: 0px; margin-top: 10px;">
+					<button class="btn butt-danger">Danger</button>
+					<button class="btn butt-disabled">Disabled</button>
+				</div>
+				<div class="col-12" style="padding: 0px; margin-top: 10px;">
+					<button class="btn butt-danger"><i class="fa fa-trash"></i></button>
+					<button class="btn butt-info"><i class="fa fa-info"></i></button>
+					<button class="btn butt-primary"><i class="fa fa-check"></i></button>
+				</div>
+				<div class="col-12" style="padding: 0px; margin-top: 10px;">
+					<h3>Switch</h3>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider"></span>
+					</label>
+					<label class="switch">
+						<input type="checkbox">
+						<span class="slider">On&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Off</span>
+					</label>
+				</div>
+
+
+			</div>
+			<div class="col-3" style="padding: 5px;">
+				<h3>Card</h3>
+				<div class="card card-dark">
+					<img class="card-img-top" src="assets/back.jpg" alt="Card image cap">
+					<div class="card-body">
+						--- Content ---
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<h3>Alert</h3>
+				<div class="alert alert-danger" role="alert">
+					<span><i class="fa fa-warning"></i></span><span><strong>Warning!</strong> theres an error.</span>
+				</div>
+				<div class="alert alert-dark" role="alert">
+					<span><i class="fa fa-info"></i></span><span><strong>Important!</strong> Read this!</span>
+				</div>
+				<div class="alert alert-dark" role="alert">
+					<span><i class="fa fa-check"></i></span><span><strong>Well done!</strong> Mission Success!</span>
+				</div>
+				<div class="tries">
+					<button class="btn butt-default">Show Info</button>
+					<div class="alert alert-dark shows" role="alert">
+						<span><i class="fa fa-info"></i></span><span><strong>Important!</strong> Read this! </span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+@import 'theme/dark';
+
+
+$font-stack:Rajdhani,  Questrial;
+
+
+body {
+	background: #444;
+}
+
+.container {
+	background-size: cover;
+}
+
+.bordered {
+	border-radius: 3px;
+}
+
+.guide {
+	border: 1px solid green;
+}
+
+.navbar {	
+	font-family: $font-stack;
+	padding: 0px 15px;
+	@extend .bordered;
+}
+
+.sidebar {
+	font-family: $font-stack;
+	.arrow {
+		float: right;
+	}
+}
