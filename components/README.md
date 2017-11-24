@@ -2,7 +2,7 @@
 #### Framework:
 [BOOSTRAP](https://getbootstrap.com/)
 
-#### Style Languge:
+#### Style Language:
 [SASS](http://sass-lang.com/)
 
 
