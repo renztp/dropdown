@@ -3,6 +3,11 @@
 
 $font-stack:Rajdhani,  Questrial;
 
+.navbar {
+	ul ul {
+		display: none;
+	}
+}
 
 body {
 	background: #444;

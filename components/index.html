@@ -5,16 +5,17 @@
 	<title>Page</title>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Questrial|Rajdhani" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
 
-	<div class="spaces" style="height: 10em;"></div>
+	<div class="spaces" style="height: 5em;"></div>
 	<!-- NAVIGATION MENU -->
 	<div class="container">
 		<div class="row">
-			<div class="col-12" style="padding: 0px;">
+			<div class="col-12" style="padding: 0px; padding-bottom: 20px;">
 				<div class="navbar navbar-expand-lg navbar-lg">
 					<a href="#" class="navbar-brand"><i class="fa fa-gg"></i> Components</a>
 					<div class="collapse navbar-collapse">
@@ -43,7 +44,13 @@
 								</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link">Platform <i class="fa fa-angle-down"></i></a>
+								<a href="#" class="opens nav-link">Platform <i class="fa fa-angle-down"></i>
+									<ul>
+										<li>Windows</li>
+										<li>Linux</li>
+										<li>OS X</li>
+									</ul>
+								</a>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link">Donate</a>
@@ -56,7 +63,7 @@
 
 		<div class="row">
 			<!-- SIDEBAR -->
-			<div class="col-2" style="padding: 5px;">
+			<div class="col-3" style="padding-left: 15px;">
 				<h3>Sidebar</h3>
 				<div class="card sidebar">
 					<ul class="list-group list-group-flush">
@@ -77,7 +84,7 @@
 				</div>
 				<div class="col-12" style="padding: 0px; margin-top: 10px;">
 					<button class="btn butt-danger">Danger</button>
-					<button class="btn butt-disabled">Disabled</button>
+					<button class="btn butt-disabled" disabled>Disabled</button>
 				</div>
 				<div class="col-12" style="padding: 0px; margin-top: 10px;">
 					<button class="btn butt-danger"><i class="fa fa-trash"></i></button>
@@ -125,8 +132,83 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
+		<br>
+		<div class="row">
+			<div class="col-3 dark-inputs" style="padding-left: 15px;">
+				<h3>Input</h3>
+				<div class="card card-dark">
+					<div class="card-header">Login Form</div>
+					<div class="card-body">
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+							<input type="text" class="form-control" placeholder="Username">
+						</div>
+						<br>
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1"><i class="fa fa-key"></i></span>
+							<input type="password" class="form-control" placeholder="Password">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-5 dark-bread">
+				<h3>Breadcrumbs</h3>
+				<nav aria-label="breadcrumb" role="navigation">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+					</ol>
+				</nav>
+				<nav aria-label="breadcrumb" role="navigation">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item"><a href="#">Library</a></li>
+					</ol>
+				</nav>
+				<nav aria-label="breadcrumb" role="navigation">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item"><a href="#">Library</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Data</li>
+					</ol>
+				</nav>
+			</div>
+			<div class="col-4">
+				<h3>Modals</h3>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn butt-primary" data-toggle="modal" data-target="#exampleModal">
+					Launch demo modal
+				</button>
+
+				<!-- Modal -->
+				<div class="modal modal-dark fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body" style="border-top: 1px solid #222;">
+								...
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn butt-default " data-dismiss="modal">Close</button>
+								<button type="button" class="btn butt-default ">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<br>
 	</div>
+
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
 </html>

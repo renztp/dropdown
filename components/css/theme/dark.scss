@@ -1,11 +1,13 @@
 
 $darkgray: #333;
-$font-stack: sans-serif, serif, verdana;
+$font-stack:Rajdhani,  Questrial;
+$absol: absolute;
 
 .container {
   color: #fff;
   background: #333438;
   border: 1px solid #29292b;
+  box-shadow: 0px 8px 15px #333;
 }
 
 
@@ -16,11 +18,18 @@ $font-stack: sans-serif, serif, verdana;
 
   a {
     color: #fff;
+    padding: 10px;
+  }
+
+  .ml-auto {
+    li {
+      padding-right: 20px;
+    }
   }
 
   ul ul {
     display: none;
-    position: absolute;
+    position: $absol;
     z-index: 99;
     padding: 0px;
     background: #444;
@@ -37,7 +46,7 @@ $font-stack: sans-serif, serif, verdana;
     }
 
     li:hover {
-      background: #333;
+      background: $darkgray;
     }
   }
 
@@ -47,11 +56,11 @@ $font-stack: sans-serif, serif, verdana;
 
   .opens:hover > ul {
     display: inherit;
-    position: absolute;
+    position: $absol;
   }
 
   .deep {
-    position: absolute;
+    position: $absol;
     width: 100%;
     left: 7.5em;
     top: 70%;
@@ -90,7 +99,6 @@ $font-stack: sans-serif, serif, verdana;
 
 // buttons
   button {
-    border-bottom-left-radius: 2em;
     border: 0px;
     padding: 5px 15px;
     cursor: pointer;
@@ -110,7 +118,7 @@ $font-stack: sans-serif, serif, verdana;
   }
   .butt-info {
     background: #8b9196;
-    border-bottom: 3px solid #a2a8ad;
+    border-bottom: 3px solid #6b7075;
     color: #000;
   }
 
@@ -122,13 +130,14 @@ $font-stack: sans-serif, serif, verdana;
 
   .butt-disabled {
     background: #8b9196;
-    border-bottom: 3px solid #a2a8ad;
+    border-bottom: 3px solid #6b7075;
+    cursor: default;
     color: #ccc;
   }
 
   .butt-danger {
     background: #db1835;
-    border-bottom: 3px solid #fc3f5b;
+    border-bottom: 3px solid #a81028;
   }
 
 // switch
@@ -142,7 +151,7 @@ $font-stack: sans-serif, serif, verdana;
 
   .slider {
     
-    position: absolute;
+    position: $absol;
     cursor: pointer;
     top: 0;
     left: 0;
@@ -159,7 +168,7 @@ $font-stack: sans-serif, serif, verdana;
   }
 
   .slider:before {
-    position: absolute;
+    position: $absol;
     border-radius: 50%;
     content: "";
     height: 32px;
@@ -189,13 +198,13 @@ $font-stack: sans-serif, serif, verdana;
   background: transparent;
   border: 1px solid #222;
   .card-header {
-    padding: 0px 10px;
-    background: #444;
-    color: #fff;
+    padding: 5px 10px;
+    background: #323338;
+    color: #828a96;
   }
 
   .card-body {
-    background: #494d54;
+    background: #3e3f44;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
   }
@@ -240,5 +249,71 @@ $font-stack: sans-serif, serif, verdana;
 
   button:focus + .alert {
     display: inherit;
+  }
+}
+
+// Inputs
+
+.dark-inputs {
+  span {
+    background: #30363f;
+    color: #fff;
+    border: 1px solid #444;   
+  }
+
+  i {
+    width: 20px;
+    text-align: center;
+  }
+
+  input {
+    background: #2c3138;
+    border: 1px solid #444;
+    outline: 0;
+  }
+
+  input:focus {
+    background: #252a33;
+    outline: 0;
+    color: #ddd;
+  }
+
+}
+
+
+
+// Breacrumbs
+.dark-bread {
+  ol {
+    background: #302c2e;
+  }
+
+  a {
+    color: #666364;
+  }
+
+  .active {
+    color: #918e8e;
+  }
+}
+
+// Modal 
+.modal-dark {
+  background: rgba(3, 3, 3, 0.8);
+  .modal-content {
+    border-radius: 0px;
+    background:  #333438;
+  }
+
+  .modal-header {
+    border-bottom: #222;
+  }
+
+  .modal-body {
+    border-bottom: 1px solid #222;
+  }
+
+  .modal-footer {
+    border-top: #222;
   }
 }
