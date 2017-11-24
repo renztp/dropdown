@@ -192,9 +192,15 @@ button {
   background: rgba(3, 3, 3, 0.8); }
   .modal-dark .modal-content {
     border-radius: 0px;
-    background: #333438; }
+    color: #999;
+    background: #333438;
+    border: 1px solid #222;
+    border-bottom: 5px solid #222; }
   .modal-dark .modal-header {
+    color: #ddd;
     border-bottom: #222; }
+    .modal-dark .modal-header .close {
+      color: #ddd; }
   .modal-dark .modal-body {
     border-bottom: 1px solid #222; }
   .modal-dark .modal-footer {
