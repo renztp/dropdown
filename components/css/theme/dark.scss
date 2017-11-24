@@ -5,6 +5,10 @@ $absol: absolute;
 $white: #fff;
 $black: #000;
 
+body {
+  background: #444;
+}
+
 .container {
   color: $white;
   background: #333438;
@@ -40,7 +44,7 @@ $black: #000;
     li {
       width: 100%;
       padding: 10px 16px;
-      transition: all 0.2s;
+      transition: all .2s;
     }
 
     i {

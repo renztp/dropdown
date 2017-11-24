@@ -1,3 +1,6 @@
+body {
+  background: #444; }
+
 .container {
   color: #fff;
   background: #333438;
@@ -22,7 +25,7 @@
     .navbar ul ul li {
       width: 100%;
       padding: 10px 16px;
-      transition: all 0.2s; }
+      transition: all .2s; }
     .navbar ul ul i {
       float: right; }
     .navbar ul ul li:hover {

@@ -1,4 +1,6 @@
 @import 'theme/dark';
+// @import 'theme/light';
+
 
 
 $font-stack:Rajdhani,  Questrial;
@@ -9,9 +11,7 @@ $font-stack:Rajdhani,  Questrial;
 	}
 }
 
-body {
-	background: #444;
-}
+
 
 .container {
 	background-size: cover;
