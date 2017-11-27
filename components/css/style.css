@@ -1,17 +1,17 @@
 body {
-  background: #444; }
+  background: #ddd; }
 
 .container {
-  color: #fff;
-  background: #333438;
-  border: 1px solid #29292b;
-  box-shadow: 0px 8px 15px #333; }
+  color: #333;
+  background: #f2f3f4;
+  border: 1px solid #c1bfbf;
+  box-shadow: 0px 8px 15px #ccc; }
 
 .navbar {
-  background: #333;
-  border-bottom: 1px solid #444; }
+  background: #d9dcdd;
+  border-bottom: 1px solid #b2b2b2; }
   .navbar a {
-    color: #fff;
+    color: #333;
     padding: 10px; }
   .navbar .ml-auto li {
     padding-right: 20px; }
@@ -20,8 +20,8 @@ body {
     position: absolute;
     z-index: 99;
     padding: 0px;
-    background: #444;
-    border: 1px solid #222; }
+    background: #ddd;
+    border: 1px solid #a8a3a3; }
     .navbar ul ul li {
       width: 100%;
       padding: 10px 16px;
@@ -29,7 +29,7 @@ body {
     .navbar ul ul i {
       float: right; }
     .navbar ul ul li:hover {
-      background: #333; }
+      background: #ccc; }
   .navbar ul li {
     display: block; }
   .navbar .opens:hover > ul {
@@ -50,11 +50,11 @@ body {
     background: #414247;
     padding: 5px 10px; }
   .sidebar li {
-    background: #4f5056;
+    background: #d7e3e8;
     transition: all 0.3s;
     cursor: pointer; }
   .sidebar li:hover {
-    background: #3f4044; }
+    background: #bec9ce; }
 
 button {
   border: 0px;
@@ -106,10 +106,10 @@ button {
     right: 0;
     bottom: 0;
     border-radius: 34px;
-    background-color: #455766;
+    background-color: #70f9c2;
     -webkit-transition: .4s;
     transition: .4s;
-    border: 1px solid #53616d;
+    border: 1px solid #999999;
     font-size: 10px;
     padding-left: 8px;
     padding-top: 8px; }
@@ -121,11 +121,11 @@ button {
     width: 32px;
     left: 0px;
     bottom: 0px;
-    background-color: #1c2730;
+    background-color: #fff;
     -webkit-transition: .4s;
     transition: .4s; }
   .switch input:checked + .slider {
-    background-color: #455766; }
+    background-color: #70f9c2; }
   .switch input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
@@ -133,13 +133,13 @@ button {
 
 .card-dark {
   background: transparent;
-  border: 1px solid #222; }
+  border: 1px solid #ccc; }
   .card-dark .card-header {
     padding: 5px 10px;
-    background: #323338;
-    color: #828a96; }
+    background: #d1cccc;
+    color: #222; }
   .card-dark .card-body {
-    background: #3e3f44;
+    background: #e2dede;
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px; }
 
@@ -169,23 +169,23 @@ button {
   display: inherit; }
 
 .dark-inputs span {
-  background: #30363f;
-  color: #fff;
-  border: 1px solid #444; }
+  background: #d3c9c9;
+  color: #333;
+  border: 1px solid #bab4b4; }
 .dark-inputs i {
   width: 20px;
   text-align: center; }
 .dark-inputs input {
-  background: #2c3138;
-  border: 1px solid #444;
+  background: #d3c9c9;
+  border: 1px solid #bab4b4;
   outline: 0; }
 .dark-inputs input:focus {
-  background: #252a33;
+  background: #a8a3a3;
   outline: 0;
-  color: #ddd; }
+  color: #777; }
 
 .dark-bread ol {
-  background: #302c2e; }
+  background: #dbcece; }
 .dark-bread a {
   color: #666364; }
 .dark-bread .active, .dark-bread .tab-dark .nav-item .active:hover, .tab-dark .nav-item .dark-bread .active:hover, .dark-bread .tab-dark .nav-item .active:focus, .tab-dark .nav-item .dark-bread .active:focus {
@@ -195,22 +195,21 @@ button {
   background: rgba(3, 3, 3, 0.8); }
   .modal-dark .modal-content {
     border-radius: 0px;
-    color: #999;
-    background: #333438;
+    color: #333;
+    background: #b6b6ba;
     border: 1px solid #222;
-    border-bottom: 5px solid #222; }
+    border-bottom: 5px solid #777; }
   .modal-dark .modal-header {
-    color: #ddd;
-    border-bottom: #222; }
+    color: #222; }
     .modal-dark .modal-header .close {
       color: #ddd; }
   .modal-dark .modal-body {
-    border-bottom: 1px solid #222; }
+    border-bottom: 1px solid #888; }
   .modal-dark .modal-footer {
-    border-top: #222; }
+    border-top: #888; }
 
 .tab-dark {
-  border-bottom: 1px solid #555; }
+  border-bottom: 1px solid #888; }
   .tab-dark .nav-item a {
     color: gray; }
   .tab-dark .nav-item .nav-link:hover {
@@ -220,8 +219,8 @@ button {
   .tab-dark .nav-item .active, .tab-dark .nav-item .active:hover, .tab-dark .nav-item .active:focus {
     background-color: transparent;
     border: 0px;
-    border-bottom: 4px solid #565151;
-    color: #ccc; }
+    border-bottom: 4px solid #706969;
+    color: #333; }
 
 .navbar ul ul {
   display: none; }

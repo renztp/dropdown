@@ -1,9 +1,4 @@
-
-$darkgray: #333;
-$font-stack:Rajdhani,  Questrial;
-$absol: absolute;
-$white: #fff;
-$black: #000;
+@import 'variables';
 
 body {
   background: #444;
@@ -14,6 +9,7 @@ body {
   background: #333438;
   border: 1px solid #29292b;
   box-shadow: 0px 8px 15px #333;
+  @include box-shadow(0px, 8px, 15px, $darkgray);
 }
 
 
@@ -44,16 +40,17 @@ body {
     li {
       width: 100%;
       padding: 10px 16px;
-      transition: all .2s;
+      @include transition(all, .2s, ease);
+      &:hover {
+        background: $darkgray;
+      }
     }
 
     i {
       float: right;
     }
 
-    li:hover {
-      background: $darkgray;
-    }
+
   }
 
   ul li {
@@ -83,7 +80,7 @@ body {
   border-radius:5px;
   border: 0px;
   background: transparent;
-  
+
   .card-header {
     background: #414247;
     padding: 5px 10px;
@@ -91,60 +88,50 @@ body {
   }
 
   li {
-   background: #4f5056;
-   transition: all 0.3s;
-   cursor: pointer;
- }
-
- li:hover {
-  background: #3f4044;
-}
-
-}
-
-
-// buttons
-  button {
-    border: 0px;
-    padding: 5px 15px;
+    background: #4f5056;
+    transition: all 0.3s;
     cursor: pointer;
   }
 
-  .butt-default {
-    background: $white;
-    border-bottom: 3px solid #999;
-    color: $black;
-  } 
-
-
-  .butt-primary {
-    background: #364654;
-    border-bottom:3px solid #4a5e70;
-    color: $white;
-  }
-  .butt-info {
-    background: #8b9196;
-    border-bottom: 3px solid #6b7075;
-    color: $black;
+  li:hover {
+    background: #3f4044;
   }
 
-  .butt-warning {
-    background: #8b9196;
-    border-bottom: 3px solid #a2a8ad;
-    color: $white;
-  }
+}
 
-  .butt-disabled {
-    background: #8b9196;
-    border-bottom: 3px solid #6b7075;
-    cursor: default;
-    color: #ccc;
-  }
+// buttons
+button {
+  border: 0px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
 
-  .butt-danger {
-    background: #db1835;
-    border-bottom: 3px solid #a81028;
-  }
+.butt-default {
+  background: $white;
+  border-bottom: 3px solid #999;
+  color: $black;
+}
+
+
+.butt-primary {
+  @include btn-proper(#364654, 3px solid #4a5e70, $white);
+}
+.butt-info {
+  @include btn-proper(#8b9196, 3px solid #6b7075, $black);
+}
+
+.butt-warning {
+  @include btn-proper(#8b9196, 3px solid #a2a8ad, $white);
+}
+
+.butt-disabled {
+  cursor: default;
+  @include btn-proper(#8b9196, 3px solid #6b7075, #ccc);
+}
+
+.butt-danger {
+  @include btn-proper(#db1835, 3px solid #a81028, $black);
+}
 
 // switch
 .switch {
@@ -153,10 +140,18 @@ body {
   display: inline-block;
   width: 60px;
   height: 34px;
-  input {display:none;}
+  input {
+    display:none;
+    &:checked + .slider {
+      background-color: #455766;
+    }
+
+    &:checked + .slider:before {
+      @include transform(26px);
+    }
+  }
 
   .slider {
-    
     position: $absol;
     cursor: pointer;
     top: 0;
@@ -165,41 +160,28 @@ body {
     bottom: 0;
     border-radius: 34px;
     background-color: #455766;
-    -webkit-transition: .4s;
+    @include transition(all, .4s, ease);
     transition: .4s;
     border: 1px solid #53616d;
     font-size: 10px;
     padding-left: 8px;
     padding-top: 8px;
-  }
 
-  .slider:before {
-    position: $absol;
-    border-radius: 50%;
-    content: "";
-    height: 32px;
-    width: 32px;
-    left: 0px;
-    bottom: 0px;
-    background-color:#1c2730;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-
-  input:checked + .slider {
-    background-color: #455766;
-  }
-
-  input:focus + .slider {
-     }
-
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    &:before {
+      position: $absol;
+      border-radius: 50%;
+      content: "";
+      height: 32px;
+      width: 32px;
+      left: 0px;
+      bottom: 0px;
+      background-color:#1c2730;
+      @include transition(all, .4s, ease);
+    }
   }
 }
 
+// Card
 .card-dark {
   background: transparent;
   border: 1px solid #222;
@@ -251,10 +233,9 @@ body {
 
   button {
     margin-bottom: 20px;
-  }
-
-  button:focus + .alert {
-    display: inherit;
+    &:focus + .alert {
+      display: inherit;
+    }
   }
 }
 
@@ -264,7 +245,7 @@ body {
   span {
     background: #30363f;
     color: $white;
-    border: 1px solid #444;   
+    border: 1px solid #444;
   }
 
   i {
@@ -276,19 +257,20 @@ body {
     background: #2c3138;
     border: 1px solid #444;
     outline: 0;
+    &:focus {
+      background: #252a33;
+      outline: 0;
+      color: #ddd;
+    }
   }
 
-  input:focus {
-    background: #252a33;
-    outline: 0;
-    color: #ddd;
-  }
+
 
 }
 
 
 
-// Breacrumbs
+// Breadcrumbs
 .dark-bread {
   ol {
     background: #302c2e;
@@ -303,7 +285,7 @@ body {
   }
 }
 
-// Modal 
+// Modal
 .modal-dark {
 
   background: rgba(3, 3, 3, 0.8);
@@ -312,7 +294,7 @@ body {
     color: #999;
     background:  #333438;
     border: 1px solid #222;
-      border-bottom: 5px solid #222;
+    border-bottom: 5px solid #222;
   }
 
   .modal-header {
@@ -344,22 +326,23 @@ body {
       border: 1px solid transparent;
     }
     .nav-link:focus {
-     border: 1px solid transparent;     
-   }
+      border: 1px solid transparent;
+    }
     .active {
       background-color: transparent;
       border: 0px;
       border-bottom: 4px solid #565151;
       color: #ccc;
+
+      &:hover {
+        @extend .active;
+      }
+
+      &:focus {
+        @extend .active;
+      }
     }
 
-    .active:hover {
-      @extend .active;
-    }
-
-    .active:focus {
-      @extend .active;
-    }
   }
 
 }

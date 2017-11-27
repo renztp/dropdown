@@ -1,0 +1,35 @@
+
+$darkgray: #333;
+$font-stack:Rajdhani,  Questrial;
+$absol: absolute;
+$white: #fff;
+$black: #000;
+
+
+@mixin box-shadow($x, $y, $level, $color){
+  -webkit-box-shadow: $x $y $level $color;
+  -moz-box-shadow:  $x $y $level $color;
+  -ms-box-shadow: $x $y $level $color;
+}
+
+@mixin transition($proper, $inter, $bezier){
+  -webkit-transition: $proper $inter $bezier;
+  -moz-transition: $proper $inter $bezier;
+  -ms-transition: $proper $inter $bezier;
+  -o-transition: $proper $inter $bezier;
+  transition: $proper $inter $bezier;
+}
+
+@mixin transform($transVal){
+  -webkit-transform: translate($transVal);
+  -moz-transform: translate($transVal);
+  -ms-transform: translate($transVal);
+  -o-transform: translate($transVal);
+  transform: translate($transVal);
+}
+
+@mixin btn-proper($bg, $border-btm, $color){
+  background: $bg;
+  border-bottom: $border-btm;
+  color: $color;
+}
