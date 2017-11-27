@@ -51,6 +51,80 @@ body {
     left: 7.5em;
     top: 70%; }
 
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 34px; }
+  .switch input {
+    display: none; }
+    .switch input:checked + .slider {
+      background-color: #455766; }
+    .switch input:checked + .slider:before {
+      -webkit-transform: translate(26px);
+      -moz-transform: translate(26px);
+      -ms-transform: translate(26px);
+      -o-transform: translate(26px);
+      transform: translate(26px); }
+  .switch .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 8px;
+    padding-left: 8px;
+    border: 1px solid #53616d;
+    border-radius: 34px;
+    background-color: #455766;
+    font-size: 10px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    cursor: pointer; }
+    .switch .slider:before {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      content: "";
+      background-color: #1c2730;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+
+.alert {
+  padding: 0px;
+  border: 1px solid #fff;
+  border-radius: 0px;
+  font-size: 10px; }
+  .alert i {
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    border-right: 1px solid #999;
+    background: #f44253;
+    text-align: center; }
+  .alert span:nth-child(2) {
+    padding-left: 15px; }
+  .alert .fa-info {
+    background: #52eff2; }
+  .alert .fa-check {
+    background: #4af9bd; }
+
+.tries .alert {
+  display: none; }
+.tries button {
+  margin-bottom: 20px; }
+  .tries button:focus + .alert {
+    display: inherit; }
+
 .sidebar {
   border: 0px;
   border-radius: 5px;
@@ -101,54 +175,6 @@ button {
   color: #cccccc;
   cursor: default; }
 
-.switch {
-  display: inline-block;
-  position: relative;
-  width: 60px;
-  height: 34px; }
-  .switch input {
-    display: none; }
-    .switch input:checked + .slider {
-      background-color: #455766; }
-    .switch input:checked + .slider:before {
-      -webkit-transform: translate(26px);
-      -moz-transform: translate(26px);
-      -ms-transform: translate(26px);
-      -o-transform: translate(26px);
-      transform: translate(26px); }
-  .switch .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 8px;
-    padding-left: 8px;
-    border: 1px solid #53616d;
-    border-radius: 34px;
-    background-color: #455766;
-    font-size: 10px;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    cursor: pointer; }
-    .switch .slider:before {
-      position: absolute;
-      left: 0px;
-      bottom: 0px;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      content: "";
-      background-color: #1c2730;
-      -webkit-transition: all 0.4s ease;
-      -moz-transition: all 0.4s ease;
-      -ms-transition: all 0.4s ease;
-      -o-transition: all 0.4s ease;
-      transition: all 0.4s ease; }
-
 .card-dark {
   border: 1px solid #222;
   background: transparent; }
@@ -160,32 +186,6 @@ button {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
     background: #3e3f44; }
-
-.alert {
-  padding: 0px;
-  border: 1px solid #fff;
-  border-radius: 0px;
-  font-size: 10px; }
-  .alert i {
-    width: 40px;
-    height: auto;
-    padding: 10px;
-    border-right: 1px solid #999;
-    background: #f44253;
-    text-align: center; }
-  .alert span:nth-child(2) {
-    padding-left: 15px; }
-  .alert .fa-info {
-    background: #52eff2; }
-  .alert .fa-check {
-    background: #4af9bd; }
-
-.tries .alert {
-  display: none; }
-.tries button {
-  margin-bottom: 20px; }
-  .tries button:focus + .alert {
-    display: inherit; }
 
 .dark-inputs span {
   border: 1px solid #444;

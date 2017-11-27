@@ -60,63 +60,6 @@ body { background: $lowgray;}
 }
 
 
-// sidebar
-.sidebar {
-  @include border-bsc(0px, 5px);
-  background: transparent;
-
-  .card-header {
-    padding: 5px 10px;
-    background: #414247;
-  }
-
-  li {
-    background: #4f5056;
-    transition: all 0.3s;
-    cursor: pointer;
-  }
-
-  li:hover { background: #3f4044; }
-}
-
-// buttons
-button {
-  border: 0px;
-  padding: 5px 15px;
-  cursor: pointer;
-}
-
-.butt-default {
-  background: $white;
-  border-bottom: 3px solid #999;
-  color: $black;
-}
-
-
-// $buttons: (
-//   $butt-primary: #4a5e70,
-//   $butt-info: #6b7075, 
-//   $butt-warning: #a2a8ad,
-//   $butt-danger: #a81028
-// );
-
-.butt-primary { @include btn-proper($butt-primary, 3px solid #4a5e70, $white); }
-.butt-info { @include btn-proper($butt-info, 3px solid #6b7075, $black); }
-.butt-warning { @include btn-proper($butt-warning, 3px solid #a2a8ad, $white); }
-.butt-danger { @include btn-proper($butt-danger, 3px solid #a81028, $black); }
-
-// @each $butts, $col in $buttons {
-//   .butt-#{$butts}{
-//     @include btn-proper(#{$butts}, 3px solid $col);
-//   }
-// }
-
-.butt-disabled {
-  @include btn-proper(#8b9196, 3px solid #6b7075, $metal);
-  cursor: default;
-}
-
-
 // switch
 .switch {
   display: inline-block;
@@ -152,26 +95,6 @@ button {
   }
 }
 
-// Card
-.card-dark {
-  border: 1px solid $darkergray;
-  background: transparent;
-
-  .card-header {
-    padding: 5px 10px;
-
-
-    background: #323338;
-    color: #828a96;
-  }
-
-  .card-body {
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    background: #3e3f44;
-  }
-}
-
 
 // Alerts
 .alert {
@@ -200,6 +123,72 @@ button {
     &:focus + .alert { display: inherit; }
   }
 }
+
+// sidebar
+.sidebar {
+  @include border-bsc(0px, 5px);
+  background: transparent;
+
+  .card-header {
+    padding: 5px 10px;
+    background: #414247;
+  }
+
+  li {
+    background: #4f5056;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  li:hover { background: #3f4044; }
+}
+
+// buttons
+button {
+  border: 0px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.butt-default {
+  background: $white;
+  border-bottom: 3px solid #999;
+  color: $black;
+}
+
+.butt-primary { @include btn-proper($butt-primary, 3px solid #4a5e70, $white); }
+.butt-info { @include btn-proper($butt-info, 3px solid #6b7075, $black); }
+.butt-warning { @include btn-proper($butt-warning, 3px solid #a2a8ad, $white); }
+.butt-danger { @include btn-proper($butt-danger, 3px solid #a81028, $black); }
+
+
+.butt-disabled {
+  @include btn-proper(#8b9196, 3px solid #6b7075, $metal);
+  cursor: default;
+}
+
+
+// Card
+.card-dark {
+  border: 1px solid $darkergray;
+  background: transparent;
+
+  .card-header {
+    padding: 5px 10px;
+
+
+    background: #323338;
+    color: #828a96;
+  }
+
+  .card-body {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #3e3f44;
+  }
+}
+
+
 
 // Inputs
 .dark-inputs {
