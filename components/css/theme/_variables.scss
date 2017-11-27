@@ -1,18 +1,26 @@
-// Dark
+// COLORS
 $darkgray: #333;
+$lowgray: #444;
+$darkergray: #222;
 $font-stack:Rajdhani,  Questrial;
 $absol: absolute;
 $white: #fff;
 $black: #000;
 $slider: #455766;
 $metal: #cccccc;
+$coal: #455766;
+$bg-con: #333438;
 
-// Buttons
+
+// BUTTONS
 $butt-primary: #364654;
 $butt-info: #8b9196;
 $butt-warning: #8b9196;
 $butt-danger: #db1835;
 
+
+
+// MIXINS
 @mixin border-bsc($brd, $brd-radius: 0px){
   border: $brd;
   border-radius: $brd-radius;
@@ -29,6 +37,8 @@ $butt-danger: #db1835;
   height: $y;
 }
 
+
+// VENDORS
 @mixin box-shadow($x, $y, $level, $color){
   -webkit-box-shadow: $x $y $level $color;
   -moz-box-shadow:  $x $y $level $color;

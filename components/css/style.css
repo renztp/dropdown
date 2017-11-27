@@ -127,13 +127,13 @@ button {
     border: 1px solid #53616d;
     border-radius: 34px;
     background-color: #455766;
-    cursor: pointer;
+    font-size: 10px;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    font-size: 10px; }
+    cursor: pointer; }
     .switch .slider:before {
       position: absolute;
       left: 0px;
