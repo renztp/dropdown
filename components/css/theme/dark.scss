@@ -39,7 +39,6 @@ body { background: #444;}
     }
   }
 
-
   .ml-auto {
     li { padding-right: 20px; }
     ul li { display: block; }
@@ -125,7 +124,6 @@ button {
     @include border-bsc(1px solid #53616d, 34px);
     background-color: $slider;
     cursor: pointer;
-
     @include transition(all, .4s, ease);
     font-size: 10px;
 
@@ -134,12 +132,8 @@ button {
       left: 0px;
       bottom: 0px;
       @include xy_size(32px, 32px);
-
-
       border-radius: 50%;
       content: "";
-      
-
       background-color:#1c2730;
       @include transition(all, .4s, ease);
     }
