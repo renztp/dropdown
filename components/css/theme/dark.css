@@ -197,11 +197,9 @@ button {
   text-align: center; }
 .dark-inputs input {
   border: 1px solid #444;
-  outline: 0;
   background: #2c3138; }
   .dark-inputs input:focus {
     background: #252a33;
-    outline: 0;
     color: #ddd; }
 
 .dark-bread ol {
