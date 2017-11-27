@@ -1,15 +1,39 @@
-
+// Dark
 $darkgray: #333;
 $font-stack:Rajdhani,  Questrial;
 $absol: absolute;
 $white: #fff;
 $black: #000;
+$slider: #455766;
+$metal: #cccccc;
 
+// Buttons
+$butt-primary: #364654;
+$butt-info: #8b9196;
+$butt-warning: #8b9196;
+$butt-danger: #db1835;
+
+@mixin border-bsc($brd, $brd-radius: 0px){
+  border: $brd;
+  border-radius: $brd-radius;
+}
+
+@mixin btn-proper($bg, $border-btm, $color){
+  background: $bg;
+  border-bottom: $border-btm;
+  color: $color;
+}
+
+@mixin xy_size($x: auto, $y: auto){
+  width: $x;
+  height: $y;
+}
 
 @mixin box-shadow($x, $y, $level, $color){
   -webkit-box-shadow: $x $y $level $color;
   -moz-box-shadow:  $x $y $level $color;
   -ms-box-shadow: $x $y $level $color;
+  box-shadow: $x $y $level $color;
 }
 
 @mixin transition($proper, $inter, $bezier){
@@ -26,10 +50,4 @@ $black: #000;
   -ms-transform: translate($transVal);
   -o-transform: translate($transVal);
   transform: translate($transVal);
-}
-
-@mixin btn-proper($bg, $border-btm, $color){
-  background: $bg;
-  border-bottom: $border-btm;
-  color: $color;
 }
